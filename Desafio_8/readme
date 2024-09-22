@@ -1,0 +1,5 @@
+Desafio 8 - DIO Power BI Analyst Bootcamp
+
+O objetivo deste desafio era popular o relatório "detalhes" através da criação de visuais personalizáveis com parâmetros.
+
+Criei diversas medidas com DAX para compor os parâmetros do primeiro visual. Interessante verificar que, nos visuais utilizados, a utilização de parâmetros no eixo Y permitem apenas o uso de Medidas em parâmetros.
