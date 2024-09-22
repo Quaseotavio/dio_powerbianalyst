@@ -1,0 +1,9 @@
+Desafio 4 - DIO Power BI Analyst Bootcamp
+
+Conforme apresentado no documento de instruções do desafio, o objetivo desta modelagem era criar um star_schema a partir de um DER apresentado, com foco nas informações relativas ao Professor.
+
+No modelo que desenvolvi, a tabela fato apresenta cada relacionamento entre um professor, uma disciplina, um curso e um departamento.
+
+Além disso, o aspecto temporal demonstra o período no qual aquele professor estava responsável por aquela disciplina.
+
+Como métricas deste relacionamento, adicionei um campo para anotação da carga horária da disciplina com aquele professor específico, uma métrica de alunos matriculados e uma métrica de quantidade de aprovações, a fim de analisar a efetividade do desempenho da aprendizagem na disciplina.
