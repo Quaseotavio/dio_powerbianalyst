@@ -1,0 +1,19 @@
+Desafio 5 - DIO Power BI Analyst Bootcamp
+
+Neste desafio, o objetivo era transformar a tabela única de exemplo em um star schema, utilizando o power query, além de criar uma tabela de datas utilizando DAX.
+
+Apesar das orientações contidas no documento de instruções, desenvolvi minha própria abordagem para o problema.
+
+A tabela fato partiu de uma duplicação da tabela original, e conforme fui criando as dimensões, fui removendo colunas da tabela fato.
+
+Criei uma dimensão de Segmentos, contendo os relacionamentos entre país e segmento, gerando um ID único para cada combinação, e substituí esses valores na tabela fato utilizando mesclagem de consultas.
+
+Criei uma dimensão de Detalhes de Produtos, contendo o nome e o custo de produção, gerando um ID único para cada produto e substituí esses valores na tabela fato utilizando mesclagem de consultas.
+
+Criei uma dimensão de Descontos, conforme solicitado nas instruções, contendo as combinações entre o preço de desconto, a banda de desconto e o produto, gerando um ID único para cada combinação. Mais uma vez, substituí essas colunas na tabela fato utilizando mesclagem de consultas.
+
+Criei uma dimensão de Medidas relacionadas a produtos, utilizando a agregação de colunas no Power Query, conforme solicitado nas instruções, e relacionei-a à tabela fato através do ID do produto.
+
+Criei uma tabela de datas utilizando a função CALENDARAUTO(), para que a tabela já considerasse o próprio modelo. Adicionei diversas colunas informativas a esta tabela com fórmulas DAX. Ao final, removi as colunas da tabela fato que já continham as informações disponíveis na tabela de data.
+
+Por fim, tratei os relacionamentos identificados automaticamente pelo PowerBI de forma a atender ao modelo Star Schema.
